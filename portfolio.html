@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+  <title>C20 Investment Limited</title>
+  <link rel="shortcut icon" href="#" type="image/x-icon" />
+
+  <!-- meta tags -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="view-transition" content="same-origin" />
+  <meta name="theme-color" content="Red" />
+  <link rel="icon" href="assets/img/c20.png" />
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com/" />
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    rel="stylesheet" />
+
+  <!-- all css -->
+  <link rel="stylesheet" href="assets/css/vendor.css" />
+  <style>
+    :root {
+      /* Typography */
+      --font-body--family: "Inter", sans-serif;
+      --font-body--style: normal;
+      --font-body--weight: 400;
+
+      --font-heading--family: "Poppins", sans-serif;
+      --font-heading--style: normal;
+      --font-heading--weight: 600;
+
+      --font-button--family: "Poppins", sans-serif;
+      --font-button--style: normal;
+      --font-button--weight: 600;
+
+      /* h1-h6 */
+      --font-h1--size: 60px;
+      --font-h2--size: 48px;
+      --font-h3--size: 36px;
+      --font-h4--size: 24px;
+      --font-h5--size: 20px;
+      --font-h6--size: 16px;
+
+      /* header nav */
+      --font-nav-main: 16px;
+
+      /* Colors */
+      --color-background: rgba(255, 255, 255, 1);
+      --color-foreground: rgba(28, 37, 57, 1);
+      --color-foreground-heading: rgba(28, 37, 57, 1);
+      --color-foreground-subheading: rgba(93, 102, 111, 1);
+      --color-background-subheading: rgba(255, 255, 255, 0.1);
+      --color-border-subheading-bg: rgba(32, 40, 45, 0.1);
+      --color-primary: rgba(28, 37, 57, 1);
+      --color-primary-background: rgba(28, 37, 57, 1);
+      --color-primary-hover: rgba(28, 37, 57, 1);
+      --color-primary-background-hover: rgba(28, 37, 57, 1);
+      --color-border: rgba(255, 255, 255, 0.3);
+      --color-border-hover: rgba(93, 102, 111, 0.5);
+      --color-shadow: rgba(0, 0, 0, 1);
+      --color-overlay: rgba(28, 37, 57, 0.6);
+
+      /* Buttons */
+      --font-button-size: 16px;
+      --font-button-size-mobile: 16px;
+      --style-button-height: 56px;
+      --style-button-height-mobile: 48px;
+      --style-button-slim-height: 52px;
+      --style-button-slim-height-mobile: 40px;
+      --style-cta-underline-offset: 5px;
+      --style-cta-underline-thickness: 1px;
+
+      /* Colors - Primary Button */
+      --color-primary-button-text: rgba(255, 255, 255, 1);
+      --color-primary-button-background: rgba(32, 40, 45, 1);
+      --color-primary-button-border: rgba(32, 40, 45, 1);
+      --color-primary-button-icon: rgba(28, 37, 57, 1);
+      --color-primary-button-icon-background: rgba(255, 255, 255, 1);
+
+      --color-primary-button-hover-text: rgba(32, 40, 45, 1);
+      --color-primary-button-hover-background: rgba(255, 255, 255, 1);
+      --color-primary-button-hover-border: rgba(32, 40, 45, 1);
+      --color-primary-button-hover-icon: rgba(255, 255, 255, 1);
+      --color-primary-button-hover-icon-background: rgba(28, 37, 57, 1);
+
+      /* Colors - Secondary Button */
+      --color-secondary-button-text: rgba(32, 40, 45, 1);
+      --color-secondary-button-background: rgba(255, 255, 255, 1);
+      --color-secondary-button-border: rgba(255, 255, 255, 1);
+      --color-secondary-button-icon: rgba(255, 255, 255, 1);
+      --color-secondary-button-icon-background: rgba(32, 40, 45, 1);
+
+      --color-secondary-button-hover-text: rgba(255, 255, 255, 1);
+      --color-secondary-button-hover-background: rgba(32, 40, 45, 1);
+      --color-secondary-button-hover-border: rgba(32, 40, 45, 1);
+      --color-secondary-button-hover-icon: rgb(250, 252, 255);
+      --color-secondary-button-hover-icon-background: rgba(255, 255, 255, 1);
+
+      /* Colors - Input */
+      --color-input-background: rgba(255, 255, 255, 1);
+      --color-input-text: rgba(93, 102, 111, 1);
+      --color-input-border: rgba(93, 102, 111, 0.2);
+      --color-input-hover-background: rgba(255, 255, 255, 1);
+      --color-input-hover-text: rgba(93, 102, 111, 1);
+      --color-input-hover-border: rgba(93, 102, 111, 0.2);
+
+      /* Borders */
+      --style-border-width-buttons-primary: 1px;
+      --style-border-width-buttons-secondary: 1px;
+      --style-border-radius-buttons-primary: 40px;
+      --style-border-radius-buttons-secondary: 40px;
+
+      --style-border-width-inputs: 1px;
+      --style-border-radius-inputs: 8px;
+      --style-border-width: 1px;
+
+      /* Focus */
+      --focus-outline-width: 1px;
+      --focus-outline-offset: 3px;
+
+      /* Pagination */
+      --style-pagination-border-width: 1px;
+      --pagination-item-foreground: rgba(28, 37, 57, 1);
+      --pagination-item-background: rgba(242, 242, 242, 1);
+      --pagination-item-border: rgba(242, 242, 242, 1);
+      --pagination-item-active-foreground: rgba(255, 255, 255, 1);
+      --pagination-item-active-background: rgba(28, 37, 57, 1);
+      --pagination-item-active-border: rgba(28, 37, 57, 1);
+
+      /* Swiper */
+      --swiper-navigation-size: 16px;
+      --swiper-navigation-color: rgba(255, 255, 255, 1);
+      --swiper-navigation-background-color: transparent;
+      --swiper-navigation-hover-color: rgba(255, 255, 255, 1);
+      --swiper-navigation-hover-background-color: rgba(255, 255, 255, 0.15);
+      --swiper-pagination-bullet-inactive-color: rgba(242, 242, 242);
+      --swiper-pagination-color: rgba(28, 37, 57, 1);
+      --swiper-pagination-bullet-inactive-opacity: 1;
+    }
+
+    @media (max-width: 767px) {
+      :root {
+        --font-h1--size: 48px;
+        --font-h2--size: 40px;
+        --font-h3--size: 28px;
+        --font-h4--size: 20px;
+        --font-h5--size: 18px;
+      }
+    }
+
+    .text-lists {
+      color: black;
+    }
+
+    .text-lists:hover {
+      color: white;
+    }
+  </style>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <sticky-header data-sticky-type="always">
+    <header class="header-1 header-floating" >
+      <div class="container-fluid">
+        <div class="header-grid">
+          <!-- Logo -->
+          <a class="header-logo" href="#" aria-label="Consulo" style="justify-content: center">
+            <img src="assets/img/c20logo_dubai.png" alt="Consulo Logo" style="width: 100px" />
+          </a>
+
+          <!-- Drawer Menu -->
+          <drawer-menu>
+            <nav class="header-nav drawer-menu">
+              <!-- Mobile Header -->
+              <div class="d-lg-none header-nav-headings">
+                <a class="header-logo" href="#" aria-label="Consulo">
+                  <img src="assets/img/logo.png" alt="Consulo Logo" width="189" height="32" loading="lazy" />
+                </a>
+                <drawer-opener class="svg-wrapper menu-close" data-drawer=".drawer-menu">
+                  <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M8 9.4C7.6 9 7.6 8.4 8 8c.4-.4 1-.4 1.4 0l2.6 2.6 2.6-2.6c.4-.4 1-.4 1.4 0s.4 1 0 1.4L13.4 12l2.6 2.6c.4.4.4 1 0 1.4s-1 .4-1.4 0L12 13.4l-2.6 2.6c-.4.4-1 .4-1.4 0s-.4-1 0-1.4L10.6 12 8 9.4Z"
+                      fill="currentColor" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M23 12c0 6.1-4.9 11-11 11S1 18.1 1 12 5.9 1 12 1s11 4.9 11 11ZM3 12c0 5 4 9 9 9s9-4 9-9-4-9-9-9-9 4-9 9Z"
+                      fill="currentColor" />
+                  </svg>
+                </drawer-opener>
+              </div>
+
+              <!-- Navigation Menu -->
+              <ul class="header-menu list-unstyled">
+                <!-- Home -->
+                <li class="nav-item">
+                  <a class="menu-link menu-link-main" href="index.html">Home</a>
+                </li>
+
+                <!-- About Us -->
+                <li class="nav-item">
+                  <a class="menu-link menu-link-main" href="about.html">
+                    About Us
+                  </a>
+                </li>
+
+                <!-- Core Activities -->
+                <li class="nav-item">
+                  <a class="menu-link menu-link-main" href="sustainablity.html">
+                    Sustainability
+                  </a>
+                </li>
+
+                <!-- Leadership -->
+                <li class="nav-item">
+                  <a class="menu-link menu-link-main" href="leadership.html">
+                    Leadership
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="menu-link menu-link-main" href="chairman.html">
+                      Chairman
+                    </a>
+                  </li>
+
+                <!-- Partners & Investors -->
+                <li class="nav-item">
+                  <a class="menu-link menu-link-main" href="portfolio.html">
+                    Portfolio
+                  </a>
+                </li>
+
+                <!-- Contact -->
+                <li class="nav-item">
+                  <a class="menu-link menu-link-main" href="contact.html">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </drawer-menu>
+        </div>
+      </div>
+    </header>
+  </sticky-header>
+
+  <!-- Main -->
+  <main>
+    <!-- Page Banner -->
+    <div class="page-banner overlay">
+      <picture class="media media-bg">
+        <source media="(max-width: 575px)" srcset="assets/img/portfolio.png" />
+        <source media="(max-width: 991px)" srcset="assets/img/portfolio.png" />
+        <img src="assets/img/portfolio.png" width="1920" height="520" loading="eager" alt="Page Banner Image" />
+      </picture>
+      <div class="page-banner-content">
+        <div class="container text-center">
+          <h1 class="heading text-80 fw-700" data-aos="fade-up">Portfolio</h1>
+          <ul class="breadcrumb list-unstyled" data-aos="fade-up" data-aos-delay="100">
+            <li>
+              <a href="index.html" class="text text-18" aria-label="Home Page">
+                Home
+              </a>
+            </li>
+            <li>
+              <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M7.08929 5.40903C7.24552 5.5653 7.33328 5.77723 7.33328 5.9982C7.33328 6.21917 7.24552 6.43109 7.08929 6.58736L2.37512 11.3015C2.29825 11.3811 2.2063 11.4446 2.10463 11.4883C2.00296 11.532 1.89361 11.5549 1.78296 11.5559C1.67231 11.5569 1.56258 11.5358 1.46016 11.4939C1.35775 11.452 1.2647 11.3901 1.18646 11.3119C1.10822 11.2336 1.04634 11.1406 1.00444 11.0382C0.962537 10.9357 0.941453 10.826 0.942414 10.7154C0.943376 10.6047 0.966364 10.4954 1.01004 10.3937C1.05371 10.292 1.1172 10.2001 1.19679 10.1232L5.32179 5.9982L1.19679 1.8732C1.04499 1.71603 0.960996 1.50553 0.962894 1.28703C0.964793 1.06853 1.05243 0.859522 1.20694 0.705015C1.36145 0.550508 1.57046 0.462868 1.78896 0.460969C2.00745 0.45907 2.21795 0.543066 2.37512 0.694864L7.08929 5.40903Z"
+                  fill="currentColor" />
+              </svg>
+            </li>
+            <li>
+              <a role="link" aria-disabled="true" class="text text-18 active">
+                Portfolio
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Image Text -->
+    <div class="image-text mt-100" style="padding-bottom: 50px">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-12">
+            <div class="media-wrap" data-aos="zoom-in-up">
+              <img src="assets/img/gold1.webp" width="992" height="863" style="border-radius: 8px;" loading="lazy"
+                alt="Image" />
+            </div>
+          </div>
+          <div class="col-lg-6 col-12">
+            <div class="content section-headings">
+              <div class="text text-18" data-aos="fade-up">
+                <p style="text-align: justify">
+                  C20 Investments Limited, a company established to explore,
+                  develop, and operate gold mining projects and mining
+                  projects. The company is committed to bring in global best
+                  practices to mining industry, ensuring compliance with all
+                  mining regulations, and adopting international standards in
+                  exploration, safety, and environmental management
+                </p>
+              </div>
+              <div class="row" style="padding-top: 30px">
+                <div class="col-lg-6 text text-18">
+                  <h4>Vision</h4>
+                  <p style="text-align: justify; padding-top: 10px">
+                    To build environmentally sustainable, socially responsible
+                    and technically innovative gold mining company that
+                    contributes to Country’s mineral industry and regional /
+                    national development.
+                  </p>
+                </div>
+                <div class="col-lg-6 text text-18">
+                  <h4>Mission</h4>
+                  <p style="text-align: justify; padding-top: 10px">
+                    To identify and develop gold resources using modern
+                    exploration techniques, safe mining practices, and
+                    sustainable operations.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Technical Capabilities Section with Modern Design -->
+    <section class="technical-capabilities-section"
+      style="background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); padding: 100px 0; position: relative; overflow: hidden;">
+      <!-- Background Pattern -->
+      <div
+        style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: radial-gradient(circle at 25% 25%, rgba(28, 37, 57, 0.05) 0%, transparent 50%), radial-gradient(circle at 75% 75%, rgba(150, 81, 53, 0.05) 0%, transparent 50%); pointer-events: none;">
+      </div>
+
+      <div class="container" style="position: relative; z-index: 2;">
+        <!-- Section Header -->
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-8 text-center">
+            <div
+              style="display: inline-block; background: linear-gradient(45deg, #1c2539, #965135); color: white; padding: 8px 24px; border-radius: 50px; font-size: 14px; font-weight: 600; letter-spacing: 0.5px; margin-bottom: 20px;"
+              data-aos="fade-up">
+              TECHNICAL EXCELLENCE
+            </div>
+            <h2 class="heading text-50 mb-4" data-aos="fade-up" data-aos-delay="100"
+              style="color: #1c2539; font-weight: 700; line-height: 1.2;">
+              Technical Capability
+            </h2>
+            <p class="text-18" data-aos="fade-up" data-aos-delay="200"
+              style="color: #64748b; line-height: 1.7; max-width: 600px; margin: 0 auto;">
+              C20 Investments Limited possesses the full spectrum of technical expertise required to advance mining
+              projects from exploration to production, supported by modern methodologies and industry best practices.
+            </p>
+          </div>
+        </div>
+        <!-- Capability Cards Grid -->
+        <div class="row g-4 mb-5">
+          <!-- Exploration Technology Card -->
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div
+              style="background: linear-gradient(135deg, #1c2539 0%, #2d3748 100%); border-radius: 20px; padding: 40px; height: 100%; position: relative; overflow: hidden; transition: all 0.3s ease; border: 1px solid rgba(255,255,255,0.1);"
+              onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 40px rgba(28, 37, 57, 0.3)'"
+              onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(28, 37, 57, 0.15)'">
+
+              <!-- Gradient Overlay -->
+              <div
+                style="position: absolute; top: 0; right: 0; width: 100px; height: 100px; background: radial-gradient(circle, rgba(150, 81, 53, 0.1) 0%, transparent 70%); border-radius: 50%;">
+              </div>
+
+              <!-- Icon -->
+              <div
+                style="width: 70px; height: 70px; background: linear-gradient(45deg, #965135, #c17a5c); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 24px; position: relative;">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M16 8l-8 8"></path>
+                  <path d="M16 16l-8-8"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+              </div>
+
+              <h3 style="color: white; font-size: 24px; font-weight: 700; margin-bottom: 16px; line-height: 1.3;">
+                Exploration Expertise
+              </h3>
+              <p style="color: rgba(255,255,255,0.8); line-height: 1.6; margin-bottom: 0; font-size: 16px;">
+                C20 Investments Limited possesses the technical capability
+                to undertake systematic gold exploration activities in
+                compliance with international best practices. The company’s
+                exploration approach includes:
+              </p>
+              <ul
+                style="color: rgba(255,255,255,0.8); line-height: 1.6; margin-bottom: 0; font-size: 16px; padding-top: 10px;">
+                <li>
+                  <b>Geological Mapping</b> – Detailed surface mapping to
+                  identify lithologies, structures, and alteration zones
+                  associated with gold mineralization.
+                </li>
+                <li>
+                  <b>Geochemical Sampling</b> – Collection and analysis of
+                  soil, stream sediment, and rock chip samples to delineate
+                  anomalies and prioritize drilling targets.
+                </li>
+                <li>
+                  <b>Geophysical Surveys</b> – Application of ground and
+                  airborne geophysical methods (magnetic, resistivity,
+                  induced polarization) to define subsurface mineralization
+                  zones.
+                </li>
+                <li>
+                  <b>Drilling Programs</b> – Design and execution of rotary
+                  air blast (RAB), reverse circulation (RC), and diamond
+                  drilling campaigns for resource definition and grade
+                  control.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Resource Assessment Card -->
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div
+              style="background: linear-gradient(135deg, #965135 0%, #c17a5c 100%); border-radius: 20px; padding: 40px; height: 100%; position: relative; overflow: hidden; transition: all 0.3s ease; border: 1px solid rgba(255,255,255,0.1);"
+              onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 40px rgba(150, 81, 53, 0.3)'"
+              onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(150, 81, 53, 0.15)'">
+
+              <!-- Gradient Overlay -->
+              <div
+                style="position: absolute; top: 0; right: 0; width: 100px; height: 100px; background: radial-gradient(circle, rgba(28, 37, 57, 0.1) 0%, transparent 70%); border-radius: 50%;">
+              </div>
+
+              <!-- Icon -->
+              <div
+                style="width: 70px; height: 70px; background: linear-gradient(45deg, #1c2539, #2d3748); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 24px; position: relative;">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 3v18h18"></path>
+                  <path d="M7 12l3-3 3 3 5-5"></path>
+                  <circle cx="7" cy="12" r="1"></circle>
+                  <circle cx="10" cy="9" r="1"></circle>
+                  <circle cx="13" cy="12" r="1"></circle>
+                  <circle cx="18" cy="7" r="1"></circle>
+                </svg>
+              </div>
+
+              <h3 style="color: white; font-size: 24px; font-weight: 700; margin-bottom: 16px; line-height: 1.3;">
+                Resource Evaluation
+              </h3>
+              <p style="color: rgba(255,255,255,0.8); line-height: 1.6; margin-bottom: 0; font-size: 16px;">
+                The company is equipped to evaluate mineral resources through established industry standards and
+                methodologies. Competencies include:</p>
+              <ul
+                style="color: rgba(255,255,255,0.8); line-height: 1.6; margin-bottom: 0; font-size: 16px; padding-top: 10px;">
+                <li><b>Resource Estimation</b> – Interpretation of geological and assay data, 3D modeling, and
+                  estimation of tonnage and grade using software such as Surpac, Datamine, or Micromine.</li>
+                <li><b>Feasibility Studies</b> – Conducting scoping, pre-feasibility, and bankable feasibility studies
+                  covering mining methods, process design, infrastructure, and economics.</li>
+                <li><b>Compliance with Codes</b> – Preparation of resource and reserve statements in line with JORC, NI
+                  43-101, or other internationally recognized reporting frameworks.</li>
+
+              </ul>
+            </div>
+          </div>
+
+          <!-- Mining Engineering Card -->
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div
+              style="background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%); border-radius: 20px; padding: 40px; height: 100%; position: relative; overflow: hidden; transition: all 0.3s ease; border: 1px solid rgba(255,255,255,0.1);"
+              onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 40px rgba(45, 55, 72, 0.3)'"
+              onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(45, 55, 72, 0.15)'">
+
+              <!-- Gradient Overlay -->
+              <div
+                style="position: absolute; top: 0; right: 0; width: 100px; height: 100px; background: radial-gradient(circle, rgba(150, 81, 53, 0.1) 0%, transparent 70%); border-radius: 50%;">
+              </div>
+
+              <!-- Icon -->
+              <div
+                style="width: 70px; height: 70px; background: linear-gradient(45deg, #965135, #c17a5c); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 24px; position: relative;">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 20h20"></path>
+                  <path d="M3 20V8l6-6 6 6v12"></path>
+                  <path d="M15 9v11"></path>
+                  <path d="M9 9v11"></path>
+                  <path d="M9 9l3-3 3 3"></path>
+                </svg>
+              </div>
+
+              <h3 style="color: white; font-size: 24px; font-weight: 700; margin-bottom: 16px; line-height: 1.3;">
+                Project Development
+              </h3>
+              <p style="color: rgba(255,255,255,0.8); line-height: 1.6; margin-bottom: 0; font-size: 16px;">
+                C20 Investments follows a structured project development pathway from discovery to production:</p>
+              <ul
+                style="color: rgba(255,255,255,0.8); line-height: 1.6; margin-bottom: 0; font-size: 16px; padding-top: 10px;">
+                <li><b>Pilot-Scale Projects</b> – Design and implementation of pilot plants for metallurgical testing
+                  and process optimization, especially refractory ores (Pressure oxidation, Roasting, etc.).</li>
+                <li><b>Mine Planning & Design</b> – Development of pit optimization studies, mine scheduling, and
+                  infrastructure layouts.</li>
+                <li><b>Commercial Operations</b> – Transition from exploration to full-scale mining with emphasis on
+                  efficiency, safety, and long-term economic viability coupled with social responsibility.</li>
+                <li><b>Operational Readiness</b> – Integration of workforce training, equipment selection, and supply
+                  chain setup to ensure smooth startup.</li>
+
+              </ul>
+            </div>
+          </div>
+
+          <!-- Environmental Solutions Card -->
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div
+              style="background: linear-gradient(135deg, #c17a5c 0%, #e4a373 100%); border-radius: 20px; padding: 40px; height: 100%; position: relative; overflow: hidden; transition: all 0.3s ease; border: 1px solid rgba(255,255,255,0.1);"
+              onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 40px rgba(193, 122, 92, 0.3)'"
+              onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(193, 122, 92, 0.15)'">
+
+              <!-- Gradient Overlay -->
+              <div
+                style="position: absolute; top: 0; right: 0; width: 100px; height: 100px; background: radial-gradient(circle, rgba(28, 37, 57, 0.1) 0%, transparent 70%); border-radius: 50%;">
+              </div>
+
+              <!-- Icon -->
+              <div
+                style="width: 70px; height: 70px; background: linear-gradient(45deg, #1c2539, #2d3748); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 24px; position: relative;">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                  <path d="M2 17l10 5 10-5"></path>
+                  <path d="M2 12l10 5 10-5"></path>
+                  <circle cx="12" cy="12" r="2"></circle>
+                </svg>
+              </div>
+
+              <h3 style="color: white; font-size: 24px; font-weight: 700; margin-bottom: 16px; line-height: 1.3;">
+                Regulatory Compliance
+              </h3>
+              <p style="color: rgba(255,255,255,0.8); line-height: 1.6; margin-bottom: 0; font-size: 16px;">
+                The company is committed to strict adherence to Ghana’s mining and environmental regulations, including:
+              </p>
+              <ul
+                style="color: rgba(255,255,255,0.8); line-height: 1.6; margin-bottom: 0; font-size: 16px; padding-top: 10px;">
+                <li>Minerals and Mining Act, 2006 (Act 703) and subsequent amendments.</li>
+                <li>EPA Requirements for Environmental Impact Assessments (EIA), Environmental Management Plans (EMP),
+                  and reclamation obligations.</li>
+                <li>Health and Safety Standards under the Factories, Offices and Shops Act and international
+                  Occupational Health & Safety practices.</li>
+                <li>ESG Principles ensuring operations meet modern environmental, social, and governance expectations.
+                </li>
+
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div
+              style="background: linear-gradient(135deg, rgb(45, 55, 72) 0%, rgb(99 132 191) 100%); border-radius: 20px; padding: 40px; height: 100%; position: relative; overflow: hidden; transition: all 0.3s ease; border: 1px solid rgba(255,255,255,0.1);"
+              onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 40px rgba(45, 55, 72, 0.3)'"
+              onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(45, 55, 72, 0.15)'">
+
+              <!-- Gradient Overlay -->
+              <div
+                style="position: absolute; top: 0; right: 0; width: 100px; height: 100px; background: radial-gradient(circle, rgba(150, 81, 53, 0.1) 0%, transparent 70%); border-radius: 50%;">
+              </div>
+
+              <!-- Icon -->
+              <div
+                style="width: 70px; height: 70px; background: linear-gradient(45deg, #965135, #c17a5c); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 24px; position: relative;">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <!-- Central node -->
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <!-- Top node -->
+                  <circle cx="12" cy="3" r="2"></circle>
+                  <!-- Bottom node -->
+                  <circle cx="12" cy="21" r="2"></circle>
+                  <!-- Left node -->
+                  <circle cx="3" cy="12" r="2"></circle>
+                  <!-- Right node -->
+                  <circle cx="21" cy="12" r="2"></circle>
+                  <!-- Connectors -->
+                  <line x1="12" y1="5" x2="12" y2="9"></line>
+                  <line x1="12" y1="15" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="9" y2="12"></line>
+                  <line x1="15" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </div>
+
+
+              <h3 style="color: white; font-size: 24px; font-weight: 700; margin-bottom: 16px; line-height: 1.3;">
+                Technical Partnerships
+              </h3>
+              <p style="color: rgba(255,255,255,0.8); line-height: 1.6; margin-bottom: 0; font-size: 16px;">
+                To complement in-house expertise, C20 Investments has established access to a network of reputable
+                technical partners:</p>
+              <ul
+                style="color: rgba(255,255,255,0.8); line-height: 1.6; margin-bottom: 0; font-size: 16px; padding-top: 10px;">
+                <li>Geological and Mining Consultants for specialized studies such as structural geology, resource
+                  estimation, and pit optimization.</li>
+                <li>Accredited Laboratories in Ghana and internationally for geochemical and metallurgical analyses.
+                </li>
+                <li>Engineering Firms for process design, infrastructure, and feasibility studies.</li>
+                <li>Academic and Research Institutions for knowledge transfer and adoption of modern exploration
+                  technologies.</li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      </div>
+      </div>
+      </div>
+  </main>
+
+  <footer>
+    <!-- Footer Main -->
+    <div class="footer-main bg-contain" style="background-image: url(assets/img/footer/footer-bg-large.jpg)">
+      <div class="footer-top">
+        <div class="container-fluid">
+          <div class="row footer-custom-row">
+            <div class="col-12 col-md-6">
+              <div class="footer-widget footer-widget-brand" data-aos="fade-up" data-aos-anchor=".footer-top">
+                <a class="footer-logo" href="index.html" aria-label="Consulo Logo">
+                  <img src="assets/img/c20logo_dubai.png" alt="Consulo Logo" width="189" height="32" loading="lazy" />
+                </a>
+                <p class="text text-16">
+                  At G20 Investments, we transform assets into engines of
+                  economic development, empowering people and building
+                  resilient communities across Africa and beyond.
+                </p>
+                <ul class="social-icons list-unstyled" data-aos="fade-up" data-aos-anchor=".footer-top">
+                  <li>
+                    <a class="social-link text" href="#">
+                      <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.66634 10.2552H8.74967L9.58301 6.92188H6.66634V5.25521C6.66634 4.39739 6.66634 3.58854 8.33301 3.58854H9.58301V0.788625C9.31159 0.752583 8.28551 0.671875 7.20209 0.671875C4.94001 0.671875 3.33301 2.05259 3.33301 4.5883V6.92188H0.833008V10.2552H3.33301V17.3385H6.66634V10.2552Z"
+                          fill="currentColor" />
+                      </svg>
+                      <span class="visually-hidden">Facebook</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="social-link text" href="#">
+                      <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M3.78357 2.16742C3.78326 2.84601 3.37157 3.45666 2.74262 3.71142C2.11367 3.96619 1.39306 3.81419 0.920587 3.32711C0.448112 2.84001 0.318129 2.11511 0.59192 1.49421C0.86572 0.873305 1.48862 0.480397 2.1669 0.500755C3.0678 0.527797 3.78398 1.26612 3.78357 2.16742ZM3.83357 5.06742H0.500237V15.5007H3.83357V5.06742ZM9.10025 5.06742H5.78357V15.5007H9.06692V10.0257C9.06692 6.97573 13.0419 6.6924 13.0419 10.0257V15.5007H16.3336V8.8924C16.3336 3.75075 10.4503 3.94242 9.06692 6.4674L9.10025 5.06742Z"
+                          fill="currentColor" />
+                      </svg>
+                      <span class="visually-hidden">Linkedin</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="social-link text" href="#">
+                      <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M17.5104 1.71289C16.8743 1.9943 16.1996 2.17914 15.5088 2.26127C16.2366 1.82561 16.7812 1.14026 17.0411 0.332886C16.3573 0.739186 15.6088 1.02515 14.8282 1.17835C14.1693 0.475394 13.2483 0.0770356 12.2848 0.0781272C10.3605 0.0781272 8.79975 1.63835 8.79975 3.56354C8.79975 3.83666 8.83109 4.10153 8.88967 4.35709C5.99206 4.21121 3.42506 2.82455 1.70565 0.715686C1.39608 1.24757 1.23338 1.85216 1.2342 2.46757C1.2342 3.67667 1.84967 4.74388 2.78458 5.36868C2.23115 5.35118 1.6899 5.20171 1.20599 4.93262C1.20545 4.94726 1.20545 4.9619 1.20545 4.97574C1.20545 6.66484 2.40683 8.07384 4.00166 8.39376C3.70234 8.47476 3.3936 8.51568 3.08352 8.51543C2.85831 8.51543 2.63976 8.49468 2.42733 8.45393C2.8711 9.83826 4.15739 10.8461 5.683 10.8738C4.44845 11.8427 2.92391 12.3683 1.35453 12.3661C1.07677 12.3663 0.799246 12.3499 0.523438 12.3171C2.1167 13.3413 3.97127 13.8849 5.86535 13.8829C12.2763 13.8829 15.7817 8.57243 15.7817 3.9671C15.7817 3.81643 15.778 3.66523 15.7713 3.51615C16.4536 3.02322 17.0425 2.41257 17.5104 1.71289Z"
+                          fill="currentColor" />
+                      </svg>
+                      <span class="visually-hidden">Twitter</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="social-link text" href="#">
+                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.85724 0.671875C10.7951 0.673425 11.2703 0.678392 11.681 0.690617L11.8427 0.6959C12.0296 0.702542 12.2139 0.710875 12.4362 0.721292C13.3229 0.762267 13.9278 0.902542 14.4591 1.10879C15.0083 1.3206 15.4722 1.60671 15.9354 2.06991C16.3979 2.5331 16.6841 2.99837 16.8966 3.54629C17.1021 4.07685 17.2424 4.68241 17.2841 5.56921C17.294 5.79143 17.302 5.97577 17.3086 6.16263L17.3138 6.32437C17.326 6.73499 17.3316 7.21032 17.3333 8.14818L17.334 8.76952C17.3341 8.84543 17.3341 8.92377 17.3341 9.0046L17.334 9.23968L17.3335 9.8611C17.3319 10.7989 17.327 11.2743 17.3147 11.6848L17.3094 11.8466C17.3028 12.0335 17.2945 12.2178 17.2841 12.44C17.2431 13.3268 17.1021 13.9317 16.8966 14.4629C16.6847 15.0123 16.3979 15.4762 15.9354 15.9393C15.4722 16.4018 15.0062 16.6879 14.4591 16.9004C13.9278 17.106 13.3229 17.2463 12.4362 17.2879C12.2139 17.2978 12.0296 17.3059 11.8427 17.3124L11.681 17.3177C11.2703 17.3299 10.7951 17.3354 9.85724 17.3373L9.23582 17.3379C9.1599 17.3379 9.08157 17.3379 9.00074 17.3379H8.76565L8.14424 17.3373C7.2064 17.3358 6.73109 17.3309 6.32046 17.3186L6.15873 17.3134C5.97185 17.3067 5.78752 17.2983 5.5653 17.2879C4.67849 17.247 4.07433 17.106 3.54239 16.9004C2.99377 16.6887 2.52919 16.4018 2.06599 15.9393C1.6028 15.4762 1.31739 15.0102 1.10489 14.4629C0.898636 13.9317 0.759052 13.3268 0.717386 12.44C0.707486 12.2178 0.69941 12.0335 0.692869 11.8466L0.687627 11.6848C0.675435 11.2743 0.669877 10.7989 0.668077 9.8611L0.667969 8.14818C0.669519 7.21032 0.674477 6.73499 0.686702 6.32437L0.691994 6.16263C0.698635 5.97577 0.706969 5.79143 0.717386 5.56921C0.758352 4.68171 0.898636 4.07754 1.10489 3.54629C1.31669 2.99768 1.6028 2.5331 2.06599 2.06991C2.52919 1.60671 2.99447 1.32129 3.54239 1.10879C4.07364 0.902542 4.6778 0.762958 5.5653 0.721292C5.78752 0.7114 5.97185 0.703325 6.15873 0.696783L6.32046 0.691542C6.73109 0.679342 7.2064 0.673783 8.14424 0.671983L9.85724 0.671875ZM9.00074 4.83796C6.6983 4.83796 4.83405 6.70423 4.83405 9.0046C4.83405 11.307 6.70033 13.1713 9.00074 13.1713C11.3032 13.1713 13.1674 11.305 13.1674 9.0046C13.1674 6.70221 11.3011 4.83796 9.00074 4.83796ZM9.00074 6.50462C10.3815 6.50462 11.5007 7.62352 11.5007 9.0046C11.5007 10.3853 10.3818 11.5046 9.00074 11.5046C7.61999 11.5046 6.50072 10.3858 6.50072 9.0046C6.50072 7.62385 7.61957 6.50462 9.00074 6.50462ZM13.3757 3.58796C12.8013 3.58796 12.3341 4.05455 12.3341 4.62892C12.3341 5.20329 12.8007 5.6706 13.3757 5.6706C13.9501 5.6706 14.4174 5.20402 14.4174 4.62892C14.4174 4.05455 13.9493 3.58724 13.3757 3.58796Z"
+                          fill="currentColor" />
+                      </svg>
+                      <span class="visually-hidden">Instagram</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="footer-widget footer-widget-menu" data-aos="fade-up" data-aos-anchor=".footer-top">
+                <div class="widget-heading heading text-22">Quick Link</div>
+                <ul class="footer-menu list-unstyled">
+                  <li>
+                    <a href="about.html" class="text text-16 link" aria-label="About Us">
+                      About Us
+                    </a>
+                  </li>
+                  <li>
+                    <a href="sustainablity.html" class="text text-16 link" aria-label="Our Team">
+                      Sustainability
+                    </a>
+                  </li>
+                  <li>
+                    <a href="leadership.html" class="text text-16 link" aria-label="Pricing Plans">
+                      Leadership
+                    </a>
+                  </li>
+                  <li>
+                    <a href="portfolio.html" class="text text-16 link" aria-label="Blogs">
+                      Portfolio
+                    </a>
+                  </li>
+                  <li>
+                    <a href="contact.html" class="text text-16 link" aria-label="Blogs">
+                      Contact Us
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="footer-widget footer-widget-menu" data-aos="fade-up" data-aos-anchor=".footer-top">
+                <div class="widget-heading heading text-22">
+                  Portfolio
+                </div>
+                <ul class="footer-menu list-unstyled">
+                  <li>
+                    <a href="#" class="text text-16 link" aria-label="UI/UX Design">
+                      Exploration Expertise
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text text-16 link" aria-label="App Development">
+                      Resource Evaluation
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text text-16 link" aria-label="Digital Marketing">
+                      Project Development
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text text-16 link" aria-label="Web Development">Regulatory Compliance</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="footer-widget footer-widget-menu" data-aos="fade-up" data-aos-anchor=".footer-top">
+                <div class="widget-heading heading text-22">Information</div>
+                <ul class="footer-menu list-unstyled">
+                  <li>
+                    <a href="#" class="text text-16 link" aria-label="Working Process">
+                      Executive Bios
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text text-16 link" aria-label="Privacy Policy">
+                      Thought Leadership
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text text-16 link" aria-label="Terms & Conditions">
+                      Board of Advisors
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom" style="background-color: #965135">
+        <div class="container-fluid">
+          <div class="row footer-bottom-row">
+            <div class="col-12 col-md-6 col-lg-6">
+              <div class="footer-copyright text text-16">
+                Copyright ©<span class="current-year"></span> C20 Investment
+                Limited. All rights reserved.
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+              <ul class="footer-menu footer-policies list-unstyled">
+                <li>
+                  <a href="privacy-policy.html" class="text text-16 link" aria-label="Privacy Policy">
+                    Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a href="terms-condition.html" class="text text-16 link" aria-label="FAQ">
+                    Terms & Conditions
+                  </a>
+                </li>
+                <li>
+                  <a href="contact.html" class="text text-16 link" aria-label="FAQ">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal and Drawer Overlay -->
+  <drawer-opener id="drawer-overlay"></drawer-opener>
+
+  <!-- Scroll to Top Button -->
+  <scroll-top>
+    <div class="scroll-to-top">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+      </svg>
+    </div>
+  </scroll-top>
+
+  <!-- all js -->
+  <script src="assets/js/vendor.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+
+
+</html>
